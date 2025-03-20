@@ -1,0 +1,26 @@
+{
+  "name": "nursery",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "tsnd --transpile-only --respawn --exit-child src/server.ts",
+    "build": "npx tsc",
+    "start": " pm2-runtime start dist/server.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "fastify-autoload": "^3.12.0",
+    "fastify-plugin": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
